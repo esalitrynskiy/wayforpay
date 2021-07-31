@@ -33,10 +33,10 @@ class WayForPay
     /**
      * Init
      */
-    public function __construct()
+    public function __construct($merchantAccount, $merchantSecretKey)
     {
-        $this->_merchant_account = config('wayforpay.merchantAccount');
-        $this->_merchant_password =config('wayforpay.merchantSecretKey');
+        $this->_merchant_account = $merchantAccount;
+        $this->_merchant_password = $merchantSecretKey;
     }
 
     /**
